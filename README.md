@@ -312,11 +312,11 @@ Submit screenshots of your attempts and monitoring or logs from the WAF showing 
 - **E4T2_sshattempt.png** - Screenshot of your SSH attempt.<br>
 ![](./starter/screenshot/E4T2_sshattempt.PNG)<br>
 - **E4T2_s3iampolicy.png** - Screenshot of the updated IAM policy.<br>
-![](./starter/screenshot/E4T2_s3iampolicy.PNG)<br>
+![](./starter/screenshot/E4T2_s3iampolicy.png)<br>
 - **E4T2_s3copy.png** - Screenshot of the failed copy attempt.<br>
 ![](./starter/screenshot/E4T2_s3copy.PNG)<br>
 - **E4T2_s3encryption.png** - screenshot of the S3 bucket policy<br>
-![](./starter/screenshot/E4T2_s3encryption.PNG)<br>
+![](./starter/screenshot/E4T2_s3encryption.png)<br>
 - **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.<br>
 ![](./starter/screenshot/E4T3_securityhub.PNG)<br>
 - **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.<br>
