@@ -123,7 +123,7 @@ https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks
  
 Obtain the name of the S3 bucket by navigating to the Outputs section of the stack:
  
-![Outputs Section](s3stack_output.png)
+![Outputs Section](/starter/screenshot/s3stack_output.PNG)
  
 Note down the names of the two other buckets that have been created, one for free recipes and one for secret recipes.  You will need the bucket names to upload example recipe data to the buckets and to run the attack scripts.
  
@@ -318,7 +318,7 @@ Submit screenshots of your attempts and monitoring or logs from the WAF showing 
 - **E4T2_s3encryption.png** - screenshot of the S3 bucket policy<br>
 ![](./starter/screenshot/E4T2_s3encryption.png)<br>
 - **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.<br>
-![](./starter/screenshot/E4T3_securityhub.PNG)<br>
+![](./starter/screenshot/E4T3_securityhub.png)<br>
 - **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.<br>
 ![](./starter/screenshot/E4T3_config.PNG)<br>
 - **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.<br>
@@ -336,7 +336,7 @@ As a Cloud Architect, you have been asked to apply security best practices to th
 Submit answer in E4T1.txt
 
 **Deliverables:**
-- **E4T1.txt** - Answer to the prompts in Exercise 4, Task 1.
+- **[E4T1](/starter/E4T1.txt)** - Answer to the prompts in Exercise 4, Task 1.
 
 ### Task 2 - Hardening
 
