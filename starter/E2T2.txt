@@ -1,0 +1,17 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+1. IAM policy is not following the principle of least privilege, allowing full access to resources. 
+2. CloudTrail was not set up and configured.
+3. Loadbalancer is being configured and listening on HTTP with port 80, it should be configure with HTTPS
+4. Security groups allow unrestricted access to ports with high risk which violates the AWS recommendation.
+5. A lot of UDP/TCP ports are reachable from the internet on the EC2 instance such as: 20, 21, 23 80, 5000 etc,.
+6. Server-side encryption/descryption and logging was not enabled for AWS S3 Buckets
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+1. Set up configure IAM policies with the right way for IAM root and IAM user. 
+2. Apply virtual and/or hardward MFA on IAM user, IAM group user as well as configure previlege IAM role, IAM policy makes sense.
+2. Create a CloudTrail for tracking on S3.
+3. Application Load Balancer should be configured to redirect all HTTP requests to HTTPS
+4. Limit the Ingres/Egress traffic on the Security Groups only allow 80 and 443 as well as reference the other security group for accessing AWS resource within VPC.
+5. Disable all other non-necessary ports on the EC2 instance.
+6. Enable S3 server-side encryption/descryption and logging

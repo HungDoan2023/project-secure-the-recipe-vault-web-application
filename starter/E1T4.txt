@@ -1,0 +1,10 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Currently, IAM Role is being set up with full access to AWS S3 Bucket Service so that it indirectly give some vulnerability and data breach in application and resources. 
+Instead of, IAM Role should be set up and configured with some previlege principle and it will also dependence on duty of each user and/or group user in that.
+
+# Poor practice 2
+WebAppSG Security Group is being set up and configured with full access for Ingress & Egress traffic. Ingress traffic should be configured to limit access system from the out side system or Internet.
+And it's also configured access right based on the duty of user and/or group user. Egress traffic should be set up with the right way to protect system. 
+Above thing will makes system/server reduce expose vulnerability security, data breach and makes hacker has little opportunity attack to system. Pay attention on port range 0 - 65535. Especially, port 22, 80, 5000

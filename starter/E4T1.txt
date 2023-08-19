@@ -1,0 +1,10 @@
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+Although, the hydra tool is unable to detected the brute force thread but the our environment should be 
+_ Set up and configure with a priviledge IAM policy ( role, permission) for IAM user/ group user.
+_ Set up and configure access internet over rang port with Ingress and Egress traffic on VPC Security Group
+_ Apply virtual/hardward MFA for IAM user.
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+_ Apply server side encryption enable on S3 Bucket
+_ Enable MFA on S3 Bucket
+_ Ensure that apply least priviledge instance role profile for access S3 Bucket as well
